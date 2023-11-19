@@ -13,7 +13,7 @@ interface HeaderProps {
   className?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ className }) => {
+const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const router = useRouter();
 
   const handleLogout = () => {
@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           <>
             <div>
               <Button
-                onClick={() => { }}
+                onClick={() => {}}
                 className="
             bg-transparent
             text-neutral-300
@@ -93,7 +93,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
             </div>
             <div>
               <Button
-                onClick={() => { }}
+                onClick={() => {}}
                 className="
             bg-white
             px-6
@@ -106,6 +106,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           </>
         </div>
       </div>
+      {children}
     </div>
   );
 };
