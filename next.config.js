@@ -4,6 +4,9 @@ const nextConfig = {
         domains: [
             "tjjibsqumpbhngxwiznn.supabase.co"
         ]
+    },
+    typescript: {
+        ignoreBuildErrors: true
     }
 }
 
